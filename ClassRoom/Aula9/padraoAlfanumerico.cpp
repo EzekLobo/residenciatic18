@@ -6,18 +6,18 @@ int main ()
 {
     int peso;
     cin >> peso;
-    int n =1;
+    int repetir =1;
     char letra = 'A';
     int dec = int(letra);
    
-    while( n <=  peso){
+    while( repetir <=  peso){
     
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= repetir; i++){
            
              cout << char(dec);
              dec++;
         }
         cout << endl;
-        n++;
+        repetir++;
     }
 }
