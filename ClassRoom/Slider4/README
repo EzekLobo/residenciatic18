@@ -1,0 +1,25 @@
+# --------------------Linguagem C++: Tipos de Dados e Variáveis ------------------
+
+
+Todo programa C++ deve ter uma função chamada main que indica onde começar a execução do program.
+
+Comentário e C++
+//  é utilizado como comentário de fim de linha e o tiver após  da linha é considerado comentário
+
+/* */ São utilizado para inserir comentários de multiplas linhas, tudo o que tiver entre eles e considerado comentário.
+
+Uma função é basicamente é uma sequência de instruções, identificada por
+um nome, que o computador deverá executar na ordem em que foram escritas. 
+Uma função tem quatro partes: 
+
+1-Um tipo de retorno, que especifica que tipo de resultado, se houver, a função
+retornará para quem solicitou sua execução.
+
+2-Um nome, neste caso main;
+
+3- Uma lista de parâmetros entre
+parênteses, aqui (void);
+
+4- Um corpo ou bloco sintáctico da função definido entre um conjunto de “chaves”, { }, que lista as
+ações (chamadas de instruções) que a função deve executa.
+
