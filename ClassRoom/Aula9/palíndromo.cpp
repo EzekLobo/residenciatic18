@@ -2,6 +2,7 @@
 que é o mesmo se  lido da esquerda para a direita ou da direita para
 a esquerda. */
 
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -22,9 +23,8 @@ int main ()
         string s = to_string (n); //convertendo valor em uma string
         int primeiroDigito = s[0] - '0';
         if(primeiroDigito != 0 && ultimoDigito != 0){
-            cout << "Primeiro digito " <<  primeiroDigito << endl;
-            cout << "Utimo digito :" <<  ultimoDigito << endl;
-            cout << "É um políndromo " << endl;
+            //acho que vai ter que usar um while mesmo
+            
             
         }else{
             cout << "Não é um políndromo" <<endl;
