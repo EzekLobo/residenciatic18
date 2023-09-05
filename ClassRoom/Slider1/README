@@ -1,0 +1,70 @@
+###################### RESUMO APRESENTAÇÃO DO CURSO ##########################
+
+--------------------O Paradgma de Programação ------------------------
+
+-Foco principal em descrever de forma clara o "como" uma tarefa deve ser realizada
+
+-O algotimo deve ser escrito em uma sequencia de comandos consissos, indicando ao S.O
+quais ações executar no Hardware e em qual ordem.
+
+-Ações simples incluem atribuição de valores e variaveis(Alocação de espaço ou memoria),
+estrutura de controle(como loops e condicionais) e alteração  diretas no estado do programa e dos dados.
+
+--> Principais paradigmas de programação:
+- Imperativo
+    > Procedural
+    > Orientada ao Objeto
+    > Computação paralela
+    
+- Delarativo
+    > Lógica de Programação
+    > Funcional
+
+- Não sei qual se e cada definição mais vou deixar aqui a lista -
+
+○ Paradigma Orientado a Objetos (POO)
+○ Paradigma Declarativo
+○ Paradigma Reativo
+○ Paradigma Lógico
+○ Paradigma Concorrente e Paralelo
+
+---> Caracteristicas do Paradgma Imperativo <---
+
+-> Instruções Sequenciais 
+-As ações são executadas na ordem em que foram escritas(imprementadas) no código, siguindo uma sequencia de steps.
+
+-> Variaveis e Estado Mutável 
+-São utilizados variáveis para armazenar e modificar dados temporários, e o estado do programa pode ser alterado ao logo da execução.
+
+-> Foco em algotimos 
+- O programador descreve diretamente os algoritmos e detalhes de implementação para atingir um objetivo específico.
+(Seja ordenar um vetor de números A[n] ou somar n elementos de uma operação o programador ou a organização define a finalidade
+para o programa e o programador executa a missão).
+
+
+-> Controle explícito.
+- O controle do fluxo de execução é explicitamente definido pelo programador,
+utilizando estruturas de controle como loops e condicionais(estruções de paradas dado uma condição específica,
+seguindo um certo rigor).
+
+---> Linguagens Imperativas
+- As Linguagens de programação imperativa se baseiam na noção de que um programa costiste em uma sequência de comandos que alteram
+o estado do computador.
+
+- O programa específica exatamente como as tarefas devem ser realizadas, descrever o fluxo de controle e os passos para alcançar o
+resultado desejado.As instruções são executadas na ordem em que foram escritas.
+( o fluxo de controle de uma algoritmos pode ser representado em um floxograma).
+
+
+---> Linguagens Imperativas Utilizadas no Mercado
+- Liguagem C 1972, oferecer controle direto sobre a memória e recursos do computador e aplicações de baixo nível; 
+- Linguagens C++(Plus, Plus);
+- Java 
+
+
+-> Liguagem de Programação mais populares
+-Fonte: https://pypl.github.io/PYPL.html
+
+
+# Linguagens a ser estudada será o C++
+# IDE de Programação VS Code

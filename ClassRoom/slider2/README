@@ -1,0 +1,175 @@
+################## Versionamento de Código ###################
+
+------------------------Git -----------------------------
+--> GIT
+-Git é um sistema de controle de versão distribuído que rastreia alterações em arquivos 
+de código É uma ferramenta de Versionamento de Código local,  o versionamento tem um 
+importante papel nos processos de rastrear e controlar as alterações feitas em um software 
+ao longo do tempo. Listando Diferentes versões do código, possibilitando a arternancia e 
+criação de ramificações  para adcionar ou corrigir funcionalidades.
+
+--> Vantagens de usar SCVs
+
+-Controle do histórico: facilidade em desfazer e possibilidade de analisar o histórico 
+do desenvolvimento, como também facilidade no resgate de versões mais antigas e estáveis.
+A maioria das implementações permitem analisar as alterações com detalhes, desde a primeira 
+versão até a última.
+
+-Trabalho em equipe: um sistema de controle de versão permite que diversas pessoas trabalhem 
+sobre o mesmo conjunto de documentos ao mesmo tempo e minimiza o desgaste provocado por problemas
+com conflitos de edições. É possível que a implementação também tenha um controle sofisticado de acesso
+para cada usuário ou grupo de usuários.
+
+-Marcação e resgate de versões estáveis: a maioria dos sistemas permite marcar onde é que o documento 
+estava com uma versão estável, podendo ser facilmente resgatado no futuro.
+
+-Ramificação de projeto: a maioria das implementações possibilita a divisão do projeto em várias linhas 
+de desenvolvimento, que podem ser trabalhadas paralelamente, sem que uma interfira na outra.
+
+
+# Configuração do git em uma maquina desconhecida
+# git config -- global user.username "Usuario do git Hub"
+# git config --global user.name “fulano de tal”
+# git config --global user.email “nick@mail.com”
+
+Estutura de um Repositorio Loca do git 
+
+# git init  // inicializa ou inicia um repositorio local em uma branch chamada master
+# git status // mostrar os aquivos a serem adicionados na Staging Area (index)
+
+                                                                                                                Git Repository
+----------------------                                  ---------------------                               -----------------------    
+|  Working Diretory  |                                  |    Staging Area   |                               |    Reposity HEAD    |      
+|--------------------|                                  |-------------------|                               |---------------------|
+| Arquivos           |   ---> # git add <file>   --->   | Arquivos add   e  |   ---> git commit -m --->     |   Arquivos Salvos   |
+|   -> Modificados   |                                  | Preparados para   |                               |                     |
+|   -> Excluidos     |  <--- # git checkout <file> <--- | serem versionados |   <--- git reset <file> <---  |                     |
+|   -> Adicionados   |                                  |                   |                               |                     |      
+|____________________|                                  |___________________|                               |_____________________|
+
+# git add <file>
+//Adiciona arquivos da area working diretorio a aréa de transferência para serem registradas
+no próximo commit.
+
+# git commit -m "Comentario do commite 
+// Registrando alterações no repositório com uma mensagem
+descritiva.
+
+---> Stash: Salvar na área de Staging
+● git stash -m “mensagem”
+● git stash list
+● git stash apply stash{#}
+● git stash pop
+● git stash drop stash{#}
+
+● git status: Verificando o estado atual do repositório e dos arquivos.
+● git log: Visualizando o histórico de commits.
+● git diff: Comparando alterações entre versões de arquivos
+
+
+---------------Branching no Git---------------
+
+Imagem 
+fonte: https://drive.google.com/file/d/1XuCefC4018uC65DFh5gnPjGjQ0Ifcf5y/view?usp=sharing
+
+---> git branch: Criando, listando e deletando branches.
+
+# git branch  //List branches (the asterisk denotes the current branch)
+
+# git branch -a // List all branches (local and remote)
+# git branch [branch name] //Create a new branch
+# git branch -d [branch name]  //Delete a branch
+# git branch -m [old branchname] [new branch name] //Rename a local branch
+
+---> git checkout: Alternando entre branches
+existentes.
+
+# git checkout -b [branchname] //Create a new branch and switch to it( e muda para ele)
+
+# git checkout -b [branchname] origin/[branchname] //Clone a remote branch and switch to it
+
+# git checkout [branch name] //Switch to a branch
+
+# git checkout - // Switch to thebranch last checked out 
+
+# git checkout -- [file-name.txt] // Discard changes to a file
+
+-->Gitignore
+
+Criar um arquivo especial para adicionar os caminhos e nomes que não desejamos commitar
+criar o aquivo no terminal
+.gitignore 
+
+# touch .gitignore //criar o arquivo especial
+
+# echo <file> >> .gitignore //colocar nome do arquivo dentro do .gitignore para ser ignorado
+
+# cat .gitignore // mostra o arquivo dentro do .gitigore
+
+
+# -------------------Clonando um Repositório Remoto GIT HUB--------------- #
+
+● git clone: Clonando um repositório remoto para o ambiente local.
+
+# git clone url_do_repositorio
+
+● git remote: Gerenciando conexões com repositórios remotos.
+
+# git remote -v
+
+# git remote add origin
+
+# git config -- global user.username "Usuario do git Hub"
+
+Enviando Alterações para um Repositório Remoto
+
+   Git Repository ---> Repository Remote
+
+
+● o primeiro envio 
+# git push --set-upstream origin [branch_name] ---> Repository Remote
+
+● Novas alterações locais 
+# git push --> Repository Remote
+
+
+Atualizando um Repositório Local com as Alterações do Remoto
+
+# git pull
+
+working diretory <--- Git Repository <--- Repository Remote  
+
+Prática - repositórios remotos https://github.com/DanielOliveiradaSilva/residenciatic18/blob/master/ClassRoom/slider2/Praticas.txt
+
+# ----------------------Merging no Git----------------------
+Quando trabalhamos com algum tipo de fluxo de trabalho no Git, como o Git
+flow, por exemplo, acabamos por criar várias ramificações da branch
+principal e com isso precisaremos fazer a unificação quando houver a
+finalização das novas branches.
+
+Git flow é um modelo de fluxo de trabalho que busca simplificar e organizar o versionamento de
+ramificações de um projeto de desenvolvimento no Git.
+
+Os comandos # git merge e # git rebase auxiliam nessa tarefa de juntar as ramificações.
+
+# git merge [branch_alvo] // Cria um novo commit de merge que as alterações dos braches envolvidos.
+
+
+Passos
+# git checkout -b [branch_alvo] //entra branch alvo
+
+# git commit -a -m 'Fix something' // commita todos os stash da branch 
+
+# git checkout master // Retorna a branch principal 
+
+# git merge [branch_alvo] // Cria um novo commit de merge que as alterações dos braches envolvidos.
+
+
+O Git Merge preserva a história de cada branch individualmente, mantendo
+todos os commits originais. Isso resulta em um histórico de commits mais
+completo e explícito.
+
+# it rebase [branch_alvo] //o git trasnfere as alterações do branch atual para o ponto de ramificação do branch alvo
+
+O Git Rebase é uma abordagem que altera a base de um branch, reescrevendo o histórico de commits aplicando os commits do
+branch atual na sequência do branch alvo.

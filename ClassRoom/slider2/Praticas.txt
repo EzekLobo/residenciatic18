@@ -1,0 +1,40 @@
+Prática - repositórios remotos
+
+
+Pratica 1-Página 26
+
+
+1. Criar um repositório no GitHub.
+2. Clonar o repositório para sua máquina.
+3. Navegar para outro diretório e clonar esse outro repositório:
+https://github.com/hcalmeida-uesc/tic18_prog_imp.git
+4. Utilizar os comandos para visualizar os links remotos nos dois
+repositórios
+
+
+Prática - repositórios remotos
+Pratica 2-Página 30
+
+1. Crie um outro diretório e clone o mesmo repositório que você criou
+anteriormente;
+2. Faça alterações em apenas um dos diretórios.
+3. Envie as mudanças para o GitHub.
+4. Vá ao outro diretório, verifique o status do repositório e, em seguida,
+sincronize os dados locais com o servidor.
+
+
+Prática - mesclando mudanças
+
+Prática 3-Página 36
+
+1. Em um dos diretórios criados anteriormente crie um arquivo chamado “merge1.txt”;
+2. Adicione seu nome ao arquivo e salve-o;
+3. Envie as mudanças para o GitHub.
+4. Vá ao outro diretório e antes de sincronizar com o servidor crie uma nova branch “hotfix”;
+5. Nessa branch, adicione um arquivo chamado “merge2.txt” e adicione o nome de um filme
+qualquer;
+6. Faça commit das alterações e sincronize
+7. Faça a mesclagem das branches com o merge e veja o histórico de commits.
+8. Repita o processo para e faça a mesclagem com o rebase e veja o histórico de commits.
+
+Paginas 37 até 39
