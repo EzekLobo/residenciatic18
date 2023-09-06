@@ -14,10 +14,23 @@ int main ()
     
         for (int i = 1; i <= repetir; i++){
            
-             cout << char(dec);
-             dec++;
+            cout << char(dec);
+            dec++;
+            
+            if(dec == 90){
+                dec = dec +7;
+            }
+
+            if (dec == 122){
+                dec = 48;
+            }
+            if (dec == 58){
+                dec = 65;
+            }
+            
         }
         cout << endl;
         repetir++;
+        
     }
 }
