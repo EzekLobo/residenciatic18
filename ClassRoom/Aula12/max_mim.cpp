@@ -1,5 +1,5 @@
 #include <iostream> 
-#include <string>
+
 
 void maxmin (int vetor[], int n,int &maximo, int &minimo);
 
