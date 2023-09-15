@@ -1,0 +1,43 @@
+#include <iostream>
+#include <bitset>
+
+int main() {
+    unsigned char infoGenetica;
+
+    // Solicita ao usuário que insira a informação genética
+    std::cout << "Digite a informacao genetica da planta (0-255): ";
+    std::cin >> infoGenetica;
+
+    // Contador para contar os genes presentes
+    int genesPresentes = 0;
+
+    // Loop para verificar cada gene
+    for (int i = 0; i < 8; i++) {
+        // Verifica se o bit correspondente ao gene está definido como 1
+        if (infoGenetica & (1 << i)) {
+            genesPresentes++;
+        }
+    }
+
+    // Exibe o número de genes presentes
+    std::cout << "Genes presentes na planta: " << genesPresentes << std::endl;
+
+    // Solicita ao usuário o número do gene que ele deseja verificar
+    int geneDesejado;
+    std::cout << "Digite o numero do gene desejado (1-8): ";
+    std::cin >> geneDesejado;
+
+    // Verifica se o gene desejado está presente
+    if (geneDesejado >= 1 && geneDesejado <= 8) {
+        bool presente = infoGenetica & (1 << (geneDesejado - 1));
+        if (presente) {
+            std::cout << "O gene " << geneDesejado << " esta presente na planta." << std::endl;
+        } else {
+            std::cout << "O gene " << geneDesejado << " nao esta presente na planta." << std::endl;
+        }
+    } else {
+        std::cout << "Numero de gene invalido. Digite um numero entre 1 e 8." << std::endl;
+    }
+
+    return 0;
+}
