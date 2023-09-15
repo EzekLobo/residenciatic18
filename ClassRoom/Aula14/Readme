@@ -1,0 +1,9 @@
+Cuidado com o uso do de estructs dento de um parametro de função
+pois possa estar passando mais valores por causa da estruct de 4 elementoso e o parametro 3
+
+cout cuidade no tratamento de dados na interface.
+
+EStruturado não consigo achar os dasos das funções quando transratntado
+
+Orietado a objetos
+consigo transferir os dados junto com os metodos e classes para reutilizar atraves de herança

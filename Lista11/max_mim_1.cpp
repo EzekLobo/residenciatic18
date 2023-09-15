@@ -13,7 +13,7 @@ int main (){
     maxmin(vetor,n, maximo, minimo);
     cout << "O Valor maximo: " << maximo <<endl<< "O Valor minimo: " << minimo << endl;
 
-   
+    return 0;
 }
 
 void maxmin (int vetor[], int n, int &maximo, int &minimo){
@@ -29,3 +29,9 @@ void maxmin (int vetor[], int n, int &maximo, int &minimo){
         }
     }
 }
+//Tipo de coesão e acoplamento da função do exercicio?
+
+// Acoplamento de Dados: módulos que
+// se comunicam por parâmetros.
+//Coesão Funcional, procedimental e comunicacional
+
