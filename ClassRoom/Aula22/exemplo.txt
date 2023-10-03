@@ -1,0 +1,4 @@
+Tentando ler o arquivo e o que tem dentro dele
+Escrevendo no final
+Alguma coisa
+Amor
