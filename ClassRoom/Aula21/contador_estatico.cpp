@@ -26,8 +26,8 @@ public:
 int Contador::contadorDeInstancias = 0;
 
 int main() {
-    // Contador::setContador(1); // Inicializa com um outro valor
-    // Crie algumas instâncias da classe Contador
+    // Contador::setContador(1); // Inicializa com outro outro valor
+    // Cria algumas instâncias da classe Contador
     Contador obj1;
     Contador obj2;
     Contador obj3;
