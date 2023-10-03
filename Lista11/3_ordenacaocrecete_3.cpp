@@ -6,9 +6,9 @@ void ordenar(float &a, float &b, float &c, float &d);
 
 int main() {
     float a = 4, b = 1, c = 3, d = 8;
-
     ordenar(a, b, c, d);
-
+   
+    cout << a << "-"<< b <<"-" << c <<"-" << d << endl;
     return 0;
 }
 
@@ -25,8 +25,12 @@ void ordenar(float &a, float &b, float &c, float &d) {
             }
             
         }
-         cout << vetor[i] << endl;
+        
     }
+    a = vetor[0];
+    b = vetor[1];
+    c = vetor[2];
+    d = vetor[3];
 
 }
 

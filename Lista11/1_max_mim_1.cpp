@@ -5,10 +5,10 @@ void maxmin (int vetor[], int n,int &maximo, int &minimo);
 
 using namespace std;
 int main (){
-    int maximo;
-    int minimo;
+    int maximo =0;
+    int minimo = 0;
 
-    int vetor[] = {2, 3, 4};
+    int vetor[] = {2, 3,10, 1, 4,8};
     int n = sizeof(vetor)/sizeof(vetor[0]);
     maxmin(vetor,n, maximo, minimo);
     cout << "O Valor maximo: " << maximo <<endl<< "O Valor minimo: " << minimo << endl;
@@ -18,16 +18,18 @@ int main (){
 
 void maxmin (int vetor[], int n, int &maximo, int &minimo){
 
-    minimo = vetor[0];
-    maximo = vetor [0];
-    for (int i = 0; i<n-1;i++){
-        if (minimo > vetor[i+1]){
+    minimo = vetor[0];//// 1
+    for (int i = 0; i<n;i++){
+
+        if (minimo > vetor[i+1]){//minimo vale 2 vetor vale 3
             minimo = vetor[i+1];
         }
-        if (maximo < vetor[i+1]){
-            maximo = vetor[i+1];
+         if (maximo < vetor[i]){
+            maximo = vetor[i];
         }
     }
+
+
 }
 //Tipo de coesão e acoplamento da função do exercicio?
 
