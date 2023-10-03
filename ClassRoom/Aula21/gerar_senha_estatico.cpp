@@ -8,8 +8,8 @@ class senhas {
 public:
     static string GeradoDeSenhaEstatico() {
         srand(static_cast<unsigned int>(time(nullptr))); // Inicializa o gerador de números aleatórios com o tempo atual
-        const string caracteresPermitidos = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        const int tamanhoSenha = 8;
+        string caracteresPermitidos = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int tamanhoSenha = 8;
         string senha;
 
         for (int i = 0; i < tamanhoSenha; i++) {
