@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-class Calculadora
-{
-public:
+class Calculadora{
+    public:
+    
     static double adicao(int x, int y)
     {
         return x + y;
