@@ -6,7 +6,7 @@ using namespace std;
 
 class BancoDeDados {
 public:
-    static vector<string> recuperarDados() {
+    static vector<string> recuperarDados(string url) {
         // Abrindo arquivo para leitura
         ifstream arquivo_entrada("/home/daniel/Documentos/TIC18/ClassRoom/Aula22/exemplo.txt");
         vector<string> linhas;
@@ -23,11 +23,10 @@ public:
         return linhas;
     }
 
-    static void salvarDados(vector<string>& dados){
+    static void salvarDados(vector<string>& dados, string url){
             // Abrindo o arquivo para escrita
         ofstream arquivo_saida;
-        arquivo_saida.open("/home/daniel/Documentos/TIC18/ClassRoom/Aula22/exemplo.txt", ios_base::out);
-        dados.push_back("Amor");
+        arquivo_saida.open(url, ios_base::out);
 
         // Verifica se o arquivo foi aberto com sucesso
         if (arquivo_saida.is_open()) {
@@ -42,10 +41,6 @@ public:
 };
 
 int main() {
-    vector<string> escrever = BancoDeDados::recuperarDados();
-
-    BancoDeDados::salvarDados(escrever);
-   
 
     return 0;
 }

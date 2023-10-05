@@ -1,0 +1,9 @@
+daniel ,danieloliveira.s558@gmail.com ,100,100
+Lorena ,lorenaandrade@gmail.com ,100,100
+Gabriel,hernandes@gmail.com,70.8,80.19
+gabriel,gabriel,2,4
+daniel ,danieloliveira.s558@gmail.com ,100,100
+Lorena ,lorenaandrade@gmail.com ,100,100
+Gabriel,hernandes@gmail.com,70.8,80.19
+gabriel,gabriel,2,4
+joao,joap@gmail.com,79,80
