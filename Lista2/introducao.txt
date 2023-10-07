@@ -1,0 +1,9 @@
+Residência em Texnologia da Informação e Comunicação
+
+Instruções prática para uso do git e git Hub
+
+versionamento de código 
+
+adicionando uma funcionalidade nova e corrigindo algumas palavras
+
+Parabéns pela dedicação!!! Ass: Ezequiel
